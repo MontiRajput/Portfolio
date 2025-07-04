@@ -37,7 +37,7 @@
   }
   .work_img {
     border: 2px solid #ff00ff82;
-    width: 365px;
+    width: 365px !important;
     height: 202px;
     box-shadow: 1px 1px 30px #ff00ff67;
   }
