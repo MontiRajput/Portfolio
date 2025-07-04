@@ -17,16 +17,14 @@ const Hero = () => {
         <Link to="Contact" smooth={true} offset={-100} duration={500}>
           <div className="hero-connect">Connect with me</div>
         </Link>
-        <div className="hero-resume">
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            className="anchor"
-            rel="noopener noreferrer"
-          >
-            Get Resume
-          </a>
-        </div>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          className="hero-resume"
+          rel="noopener noreferrer"
+        >
+          Get Resume
+        </a>
       </div>
     </div>
   );
