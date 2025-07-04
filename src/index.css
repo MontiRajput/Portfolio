@@ -1,0 +1,29 @@
+.title {
+  position: relative;
+}
+.title h1 {
+  padding: 0px 30px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.title img {
+  position: absolute;
+  width: 160px;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .title img {
+    display: none;
+  }
+  .title h1 {
+    font-size: 50px;
+    display: inline-block;
+  }
+
+  .title {
+    width: 100vw;
+    margin-top: 40px;
+  }
+}

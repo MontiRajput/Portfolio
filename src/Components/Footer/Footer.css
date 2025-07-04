@@ -1,0 +1,84 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
+  margin: 80px 170px;
+}
+.logo-footer {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  background: linear-gradient(to top right, #ffffff 10%, #990099 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.discription {
+  display: flex;
+  gap: 250px;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.email {
+  display: flex;
+  background: #32323c;
+  padding: 15px 50px;
+  padding-left: 25px;
+  border-radius: 40px;
+  gap: 20px;
+  height: 25px;
+}
+.email input {
+  all: unset;
+  /* font-size: 20px; */
+}
+.email:hover {
+  border: 1px solid white;
+}
+.sub {
+  all: unset;
+  height: 25px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 100%);
+  padding: 15px 30px;
+  border-radius: 40px;
+}
+.footer hr {
+  width: 100%;
+}
+
+.rights {
+  display: flex;
+  gap: 300px;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 80px;
+}
+.terms {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0 20px;
+    margin: 0;
+  }
+  .discription {
+    width: 100%;
+    gap: 50px;
+    flex-direction: column;
+  }
+  .right,
+  .rights {
+    flex-direction: column;
+    gap: 50px;
+  }
+}

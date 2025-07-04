@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #161513;
+  color: white;
+  font-family: "outfit";
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 170px;
+  box-shadow: 1px 1px 10px #161513;
+
+  background-color: #161513;
+}
+.nav-menu {
+  display: flex;
+
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 17px;
+}
+.nav-menu li {
+  cursor: pointer;
+}
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  background: linear-gradient(to top right, #ffffff 30%, #990099 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-connect {
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 400;
+  cursor: pointer;
+  background: linear-gradient(270deg, #df8908 1%, #b415ff 100%);
+  transition: 0.5s;
+  box-shadow: 1px 1px 100px #99009990;
+}
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+.link {
+  position: relative;
+}
+.link img {
+  display: none;
+  position: absolute;
+  width: 40px;
+  bottom: 0;
+  top: 20px;
+  right: 0;
+  z-index: -1;
+}
+.hidden {
+  display: none;
+}
+.active .anchor_link img {
+  display: block;
+}
+.anchor_link {
+  all: unset;
+}
+.nav_close,
+.nav_open {
+  display: none;
+}
+.Contact {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 30px;
+  }
+  .nav_open {
+    display: block;
+    position: fixed;
+    right: 30px;
+  }
+  .nav_close {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 230px;
+
+    width: 30px;
+  }
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #2b2b2b;
+    width: 300px;
+    height: 100%;
+    z-index: 10001;
+    transition: 0.5s;
+    right: -300px;
+  }
+  .open {
+    right: 0px;
+  }
+  .nav-connect {
+    display: none;
+  }
+  .nav-menu li {
+    flex-direction: row;
+    gap: 20px;
+    left: 30px;
+    font-size: 25px;
+  }
+  .Contact {
+    display: block;
+  }
+  .logo {
+    font-size: 35px;
+  }
+}
