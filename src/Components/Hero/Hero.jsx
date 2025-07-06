@@ -14,9 +14,13 @@ const Hero = () => {
         Hi, I'm a passionate Full-Stack Developer, Solved 1000+ coding Queries.
       </p>
       <div className="hero-action">
-        <Link to="Contact" smooth={true} offset={-100} duration={500}>
-          <div className="hero-connect">Connect with me</div>
-        </Link>
+        <a
+          href="https://www.linkedin.com/in/monti-rajput/"
+          className="connect-anchor"
+          target="_blank"
+        >
+          <div className="hero-connect">My LinkedIn</div>
+        </a>
         <a
           href="/resume.pdf"
           target="_blank"
