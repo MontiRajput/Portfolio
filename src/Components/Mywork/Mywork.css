@@ -27,8 +27,6 @@
 
 @media (max-width: 768px) {
   .mywork-container {
-    padding: 40px;
-
     grid-template-columns: 1fr; /* Stack items on small screens */
   }
   .mywork {
@@ -37,7 +35,7 @@
   }
   .work_img {
     border: 2px solid #ff00ff82;
-    width: 365px !important;
+    width: 100% !important;
     height: 202px;
     box-shadow: 1px 1px 30px #ff00ff67;
   }
