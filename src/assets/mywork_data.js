@@ -1,8 +1,15 @@
 import havenSpot from "./havenSpot.png";
 import spotify from "./spotify.png";
 import zerodha from "./zerodha.png";
+import vanii from "./vanii.png";
 
 const mywork_data = [
+  {
+    w_no: 0,
+    w_name: "project",
+    w_img: vanii,
+    w_link: "https://vanii.montirajput.space/",
+  },
   {
     w_no: 1,
     w_name: "project",
