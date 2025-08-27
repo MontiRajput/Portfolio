@@ -14,7 +14,7 @@ const mywork_data = [
     w_no: 1,
     w_name: "project",
     w_img: havenSpot,
-    w_link: "https://havenspot-2852.onrender.com/listings",
+    w_link: "https://havenspot.montirajput.space/listings",
   },
   {
     w_no: 2,
